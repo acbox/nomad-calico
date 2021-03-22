@@ -1,0 +1,24 @@
+[submodule "modules/archive"]
+	path = modules/archive
+	url = https://github.com/voxpupuli/puppet-archive.git
+[submodule "modules/etcd"]
+	path = modules/etcd
+	url = https://github.com/tailored-automation/puppet-module-etcd.git
+[submodule "modules/stdlib"]
+	path = modules/stdlib
+	url = https://github.com/puppetlabs/puppetlabs-stdlib.git
+[submodule "modules/systemd"]
+	path = modules/systemd
+	url = https://github.com/camptocamp/puppet-systemd.git
+[submodule "modules/docker"]
+	path = modules/docker
+	url = https://github.com/puppetlabs/puppetlabs-docker.git
+[submodule "modules/apt"]
+	path = modules/apt
+	url = https://github.com/puppetlabs/puppetlabs-apt.git
+[submodule "modules/calico"]
+	path = modules/calico
+	url = https://github.com/acbox/puppet-calico.git
+[submodule "modules/nomad"]
+	path = modules/nomad
+	url = https://github.com/voxpupuli/puppet-nomad.git
