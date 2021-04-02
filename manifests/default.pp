@@ -171,8 +171,6 @@ node 'default' {
     | JOB
   } ->
 
-  exec { "/usr/local/bin/nomad run /etc/nomad.d/hello-world.hcl":
-    subscribe   => File['/etc/nomad.d/hello-world.hcl'],
-    refreshonly => true,
+  exec { "/usr/bin/timeout 30 sh -c 'until /usr/local/bin/nomad run /etc/nomad.d/hello-world.hcl; do sleep 1; done'":
   }
 }
