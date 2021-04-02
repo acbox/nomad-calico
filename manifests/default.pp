@@ -140,7 +140,7 @@ node 'default' {
     },
   } ->
 
-  file { '/etc/nomad.d/hello-world.hcl':
+  file { '/opt/nomad/hello-world.hcl':
     owner   => 'root',
     group   => 'root',
     mode    => '0755',
@@ -171,6 +171,6 @@ node 'default' {
     | JOB
   } ->
 
-  exec { "/usr/bin/timeout 30 sh -c 'until /usr/local/bin/nomad run /etc/nomad.d/hello-world.hcl; do sleep 1; done'":
+  exec { "/usr/bin/timeout 30 sh -c 'until /usr/local/bin/nomad run /opt/nomad/hello-world.hcl; do sleep 1; done'":
   }
 }
